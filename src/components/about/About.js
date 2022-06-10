@@ -3,7 +3,8 @@ import React from "react";
 import "./About.css";
 import Certificate from "../../img/certificate.jpg";
 import DownloadIcon from "@mui/icons-material/Download";
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/FakeCv.pdf";
+// import CV from "../../assets/cv.pdf";
 // import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
 const About = () => {
