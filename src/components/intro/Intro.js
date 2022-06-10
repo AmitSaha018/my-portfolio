@@ -18,15 +18,9 @@ const Intro = () => {
               <div className="i-title-item" style={{ color : darkMode && "#ad0c62"}}>React Developer</div>
               <div className="i-title-item" style={{ color : darkMode && "#ad0c62"}}>Self Learner</div>
               <div className="i-title-item" style={{ color : darkMode && "#ad0c62"}}>Technophile</div>
-              {/* <div className="i-title-item">React Developer</div>
-                          <div className="i-title-item">Self Learner</div> */}
             </div>
           </div>
-          <p className="i-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            numquam magnam facere minima repellendus cumque dolore consectetur
-            recusandae, at autem.
-          </p>
+          
         </div>
         <svg
           width="75"
