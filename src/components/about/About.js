@@ -1,8 +1,9 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import "./About.css";
-import Certificate from '../../img/certificate.jpg'
-import DownloadIcon from '@mui/icons-material/Download';
-import CV from "../../assets/cv.pdf"
+import Certificate from "../../img/certificate.jpg";
+import DownloadIcon from "@mui/icons-material/Download";
+import CV from "../../assets/cv.pdf";
 // import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
 const About = () => {
@@ -13,8 +14,8 @@ const About = () => {
         <div className="a-card">
           <p className="message">My CV is Downloadable here</p>
           <p className="shortMessage">(Click on the icon)</p>
-          <a href={CV} download="Amit's Resume" target='_blank'>
-          <DownloadIcon className="downloadIcon" />
+          <a href={CV} download="Amit's Resume" target="_blank">
+            <DownloadIcon className="downloadIcon" />
           </a>
           {/* <img
             src="https://images.pexels.com/photos/3585047/pexels-photo-3585047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
@@ -23,25 +24,21 @@ const About = () => {
           /> */}
         </div>
       </div>
-          <div className="a-right">
-          <h1 className="a-title">About Me</h1>
+      <div className="a-right">
+        <h1 className="a-title">About Me</h1>
         <p className="a-sub">
-          It is a long established fact that a reader will be distracted by the
-          readable content.
+          I am aspiring React developer.
         </p>
         <p className="a-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+          I started my education as a Bachelor of Computer Application at the year 2013 and then started my Masters on Computer Application at the year 2016. Presently i am studying on React and working on it.
         </p>
         <div className="a-award">
           <img src={Certificate} alt="" className="a-award-img" />
           <div className="a-award-texts">
-            <h4 className="a-award-title">IBM Hackathon Special Category Winner 2018</h4>
-            <p className="a-award-desc">
-              Winner for best UI
-            </p>
+            <h4 className="a-award-title">
+              IBM Hackathon Special Category Winner 2018
+            </h4>
+            <p className="a-award-desc">Winner for best UI</p>
           </div>
         </div>
       </div>

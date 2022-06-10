@@ -111,9 +111,9 @@
       height: 30vh;
     }
 
-    .a-card.bg, .a-award{
+    /* .a-card.bg, .a-award{
       display: none;
-    }
+    } */
 
     .a-right{
       padding: 20px;
