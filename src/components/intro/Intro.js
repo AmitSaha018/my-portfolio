@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./intro.css";
 import Me from "../../img/me.png";
+import { ThemeContext } from "../../context";
 
 const Intro = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="i">
       <div className="i-left">
@@ -11,10 +14,10 @@ const Intro = () => {
           <h1 className="i-name">Amit Saha</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">React Developer</div>
-              <div className="i-title-item">Self Learner</div>
-              <div className="i-title-item">Technophile</div>
+              <div className="i-title-item" style={{ color : darkMode && "#ad0c62"}}>Web Developer</div>
+              <div className="i-title-item" style={{ color : darkMode && "#ad0c62"}}>React Developer</div>
+              <div className="i-title-item" style={{ color : darkMode && "#ad0c62"}}>Self Learner</div>
+              <div className="i-title-item" style={{ color : darkMode && "#ad0c62"}}>Technophile</div>
               {/* <div className="i-title-item">React Developer</div>
                           <div className="i-title-item">Self Learner</div> */}
             </div>
@@ -30,9 +33,10 @@ const Intro = () => {
           height="75"
           viewBox="0 0 75 75"
           fill="none"
-          stroke="black"
+          stroke={darkMode ? "#ece2e7" : "black"}
           className="i-scroll"
           xmlns="http://www.w3.org/2000/svg"
+          style={{ Color : darkMode && "#989697"}}
         >
           <g id="scroll">
             <path
@@ -83,7 +87,7 @@ const Intro = () => {
         </svg>
       </div>
       <div className="i-right">
-        <div className="i-bg"></div>
+        <div className="i-bg" style={{ backgroundColor : darkMode && "#ad0c62"}}></div>
         <img src={Me} alt="me" className="i-img" />
       </div>
     </div>

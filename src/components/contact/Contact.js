@@ -1,12 +1,14 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
-import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import emailjs from "@emailjs/browser";
 import { ThemeContext } from "../../context";
 import { BsMessenger } from "react-icons/bs";
 import { ImWhatsapp } from "react-icons/im";
+import { AiFillGithub } from "react-icons/ai";
+
 
 
 const Contact = () => {
@@ -37,11 +39,17 @@ const Contact = () => {
   };
   return (
     <div className="c">
-      <div className="c-bg"></div>
+      <div className="c-bg" style={{ backgroundColor : darkMode && "#ad0c62"}}></div>
       <div className="c-wrapper">
         <div className="c-left">
           <h1 className="c-title">Contact Me</h1>
           <div className="c-info">
+            <div className="c-info-item">
+              <AiFillGithub className="githubIcon" />
+              <p>
+                <span><a href="https://github.com/AmitSaha018" target="_blank">Visit me Github</a></span>
+              </p>
+            </div>
             <div className="c-info-item">
               <ImWhatsapp className="whatsappIcon" />
               <p>
@@ -99,7 +107,7 @@ const Contact = () => {
               placeholder="Message"
               name="message"
             />
-            <button>Submit</button>
+            <button style={{ backgroundColor : darkMode && "#ad0c62"}}>Submit</button>
             {done && "Thank you for Contacting..."}
           </form>
         </div>

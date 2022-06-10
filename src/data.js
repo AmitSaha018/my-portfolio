@@ -1,5 +1,6 @@
 import image from "./img/product.jpg"
 import image1 from "./img/product1.jpg"
+import image2 from "./img/product2.jpg"
 
 export const products = [
     {
@@ -10,9 +11,9 @@ export const products = [
     },
     {
       id: 2,
-      img: image,
-      title:"none",
-      link: "https://www.google.co.in/",
+      img: image2,
+      title:"Whatsapp Clone",
+      link: "https://whatsapp-clone-amitsaha018.netlify.app/",
     },
     {
       id: 3,
