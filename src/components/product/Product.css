@@ -5,6 +5,7 @@
     border: 2px solid rgb(243,242,242);
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
+    background-color: white;
 }
 
 .p .title {
@@ -39,8 +40,10 @@
 
 @media screen and (max-width:480px){
     .p{
-        width: 40%;
+        width: 70%;
         height: 20vh;
+        background-color: white;
+        margin: 20px auto;
     }
     
 }

@@ -7,20 +7,12 @@ const ProductList = () => {
   return (
     <div className="pl">
       <div className="pl-texts">
-        <h1 className="pl-title">Create & inspire. It's Lama</h1>
+        <h1 className="pl-title">Recent Projects Created by React</h1>
         <p className="pl-desc">
-          Lama is a creative portfolio that your work has been waiting for.
-          Beautiful homes, stunning portfolio styles & a whole lot more awaits
-          inside.
+          Name of the respective are mentioned and they clickable. Once they are clicked they are redirected to the online deployed project.
         </p>
       </div>
           <div className="pl-list">
-              {/* <Product/>
-              <Product/>
-              <Product/>
-              <Product/>
-              <Product/>
-              <Product/> */}
         {products.map((item) => (
           <Product key={item.id} img={item.img} link={item.link} title={item.title}/>
         ))}

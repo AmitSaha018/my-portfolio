@@ -37,8 +37,13 @@
         width: 100%;
     }
 
+    .pl-title {
+        font-size: 30px;
+    }
+
     .pl-desc {
-        display: none;
+        /* display: none; */
+        font-size: 10px;
     }
     
 }

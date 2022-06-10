@@ -21,22 +21,5 @@ export const products = [
       title:"none",
       link: "https://www.google.co.in/",
     },
-    {
-      id: 4,
-      img: image,
-      title:"none",
-      link: "https://www.google.co.in/",
-    },
-    {
-      id: 5,
-      img: image,
-      title:"none",
-      link: "https://www.google.co.in/",
-    },
-    {
-      id: 6,
-      img: image,
-      title:"none",
-      link: "https://www.google.co.in/",
-    },
+    
   ];
